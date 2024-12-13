@@ -8,6 +8,11 @@ export const Section = styled.section`
   @media (max-width: 768px) {
     padding: 40px 15px;
   }
+
+
+  @media (max-width: 320px) {
+    padding: 30px 10px; /* Adjusted for iPhone SE */
+  }
 `;
 
 
@@ -22,6 +27,10 @@ export const Container = styled.div`
   @media (max-width: 480px) {
     padding: 0 5px; /* Added for extra small screens */
   }
+
+  @media (max-width: 320px) {
+    padding: 0 3px; /* Adjusted for iPhone SE */
+  }
 `;
 
 export const ContentWrapper = styled.div`
@@ -32,6 +41,10 @@ export const ContentWrapper = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 20px;
+  }
+
+  @media (max-width: 320px) {
+    gap: 15px; /* Adjusted for iPhone SE */
   }
 `;
 
@@ -44,6 +57,10 @@ export const LeftContent = styled.div`
 
   @media (max-width: 768px) {
     gap: 20px;
+  }
+
+    @media (max-width: 320px) {
+    gap: 10px; /* Adjusted for iPhone SE */
   }
 `;
 
@@ -58,7 +75,12 @@ export const Header = styled.div`
     @media (max-width: 768px) {
       font-size: 1.5rem;
     }
+
+    @media (max-width: 320px) {
+      font-size: 1.2rem; /* Adjusted for iPhone SE */
+    }
   }
+
   p {
     font-size: 1rem;
     line-height: 1.5;
@@ -67,6 +89,10 @@ export const Header = styled.div`
 
     @media (max-width: 768px) {
       font-size: 0.9rem;
+    }
+
+    @media (max-width: 320px) {
+      font-size: 0.8rem; /* Adjusted for iPhone SE */
     }
   }
 `;
@@ -85,6 +111,10 @@ export const Form = styled.div`
     padding: 15px;
   }
 
+  @media (max-width: 320px) {
+    padding: 10px; /* Adjusted for iPhone SE */
+  }
+
   h3 {
     font-size: 1.2rem;
     font-weight: bold;
@@ -93,6 +123,10 @@ export const Form = styled.div`
 
     @media (max-width: 768px) {
       font-size: 1rem;
+    }
+
+    @media (max-width: 320px) {
+      font-size: 0.9rem; /* Adjusted for iPhone SE */
     }
   }
 
@@ -104,6 +138,10 @@ export const Form = styled.div`
     @media (max-width: 768px) {
       font-size: 0.8rem;
     }
+
+    @media (max-width: 320px) {
+      font-size: 0.7rem; /* Adjusted for iPhone SE */
+    }
   }
 `;
 
@@ -114,7 +152,7 @@ export const Input = styled.input`
   border-radius: 4px;
   padding: 10px;
   font-size: 1rem;
-  width: 100%;
+  width: 95%;
   max-width: 300px;
 
   &::placeholder {
@@ -124,6 +162,11 @@ export const Input = styled.input`
   @media (max-width: 768px) {
     padding: 8px;
     font-size: 0.9rem;
+  }
+
+  @media (max-width: 320px) {
+    padding: 6px; /* Adjusted for iPhone SE */
+    font-size: 0.8rem;
   }
 `;
 
@@ -151,9 +194,9 @@ export const AddButton = styled.button`
     font-size: 0.9rem;
   }
 
-  @media (max-width: 480px) {
-    padding: 8px 15px; /* Added for extra small screens */
-    font-size: 0.8rem;
+  @media (max-width: 320px) {
+    padding: 8px 10px; /* Adjusted for iPhone SE */
+    font-size: 0.7rem;
   }
 `;
 
@@ -205,7 +248,20 @@ export const Card = styled.div`
     flex-direction: column;
     padding: 15px;
   }
+
+  @media (max-width: 480px) {
+    min-width: 260px; /* Adjust width for smaller screens */
+    padding: 12px;
+  }
+
+  @media (max-width: 320px) {
+    flex-direction: column; /* Ensure vertical stacking */
+    padding: 10px; /* Reduced padding for very small screens */
+    gap: 8px;
+    min-width: 240px; /* Further adjust width */
+  }
 `;
+
 
 export const Icon = styled.div`
   width: 50px;

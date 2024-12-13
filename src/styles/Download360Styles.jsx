@@ -245,5 +245,14 @@ export const PlaceholderImage = styled.div`
     width: 295%;
     height: 40vh; /* Still takes up full viewport height on smaller screens */
   }
+
+  @media (max-width: 480px) {
+    width: 220%;
+    height: 40vh;
+  }
+
+  @media (max-width: 320px) {
+    
+  }
 `;
 
