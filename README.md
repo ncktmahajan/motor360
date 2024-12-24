@@ -15,7 +15,6 @@ Motor360 is a website designed to provide users with comprehensive services rela
 2. **Track Challan**: A dedicated section for challan tracking.
 3. **Vehicle Registration**: Lookup and manage vehicle registration details.
 4. **About Us**: Information about Motor360 and its mission.
-5. **Contact**: Form or details to get in touch with Motor360 support.
 
 ## Screenshot
 
